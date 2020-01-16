@@ -8,5 +8,6 @@ namespace DatingApp.API.Data
         public DataContext(DbContextOptions<DataContext> options) : base(options){}
 
         public DbSet<Value> Values { get; set; } //Specifies table name when DB is scaffolded
+        public DbSet<User> Users { get; set; }
     }
 }
